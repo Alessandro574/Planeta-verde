@@ -1,0 +1,106 @@
+:root {
+    --verde-fuerte: #78a378;
+    --verde-claro: #f0f7f0;
+    --verde-borde: #b8d4b8;
+    --texto: #2f4f2f;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--verde-claro);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.container { max-width: 1150px; margin: 0 auto; padding: 20px; }
+
+.main-header { 
+    background: var(--verde-fuerte); 
+    color: white; 
+    text-align: center; 
+    padding: 25px; 
+    border-bottom: 5px solid var(--verde-borde); 
+}
+
+.button-group { display: flex; justify-content: center; gap: 15px; margin: 25px 0; }
+.btn-main { 
+    background: var(--blanco); 
+    border: 2px solid var(--verde-fuerte); 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    color: var(--verde-fuerte); 
+}
+
+.split-layout { display: flex; gap: 25px; align-items: flex-start; }
+.animal-grid { 
+    flex: 3; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+/* Paneles ajustados al texto */
+.animal-card { height: fit-content; }
+
+.card-item, .info-card-full {
+    background: var(--blanco);
+    border: 2px solid var(--verde-borde);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item { text-align: center; }
+
+/* Acordeón */
+.accordion-item {
+    background: var(--blanco);
+    border: 2px solid var(--verde-borde);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    color: var(--verde-fuerte);
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 250px;
+    padding: 15px;
+}
+
+.accordion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.hover-card { transition: 0.3s; }
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.img-small { width: 140px; height: 100px; border-radius: 8px; object-fit: cover; margin: 0 auto 15px; }
+.img-medium { width: 180px; height: 130px; border-radius: 10px; object-fit: cover; margin: 0 auto 15px; }
+
+h4 { margin: 10px 0; color: var(--verde-fuerte); }
+p { font-size: 0.9rem; line-height: 1.4; margin: 0; }
+
+.side-info { flex: 1; }
+.paises-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 20px; }
+.video-container { border-radius: 15px; overflow: hidden; border: 3px solid var(--verde-borde); }
+.main-footer { text-align: center; padding: 30px; background: var(--verde-fuerte); color: white; margin-top: 50px; }

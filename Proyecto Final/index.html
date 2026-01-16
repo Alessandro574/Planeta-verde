@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ambiental Educativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Planeta Verde</h1>
+        <p>Centro de Documentación sobre el Cambio Climático</p>
+    </header>
+
+    <section class="welcome-menu">
+        <div class="container">
+            <div class="button-group">
+                <button onclick="mostrarSeccion('animales-section')" class="btn-main">Impacto en Biodiversidad</button>
+                <button onclick="mostrarSeccion('paises-section')" class="btn-main">Geopolítica y Organizaciones</button>
+                <button onclick="mostrarSeccion('video-section')" class="btn-main">Video, Fenómenos y Mitigación</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div id="animales-section" class="content-section">
+            <div class="split-layout">
+                <aside class="side-info">
+                    <div class="accordion-item hover-card">
+                        <button class="accordion-header">Efecto Invernadero</button>
+                        <div class="accordion-content">
+                            <p>Gases como el CO2 y el metano atrapan la radiación infrarroja. La quema de combustibles fósiles ha elevado la concentración de CO2 a niveles no vistos en 3 millones de años, provocando un aumento térmico global de 1.1 grados.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hover-card">
+                        <button class="accordion-header">Ciclo del Agua</button>
+                        <div class="accordion-content">
+                            <p>El aire caliente retiene más humedad, provocando tormentas un 7% más húmedas por cada grado de calentamiento. Esto genera inundaciones repentinas y altera corrientes oceánicas vitales.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hover-card">
+                        <button class="accordion-header">Océanos en Peligro</button>
+                        <div class="accordion-content">
+                            <p>La acidificación por absorción de CO2 mata el fitoplancton (productor del 50% del oxígeno). El aumento del nivel del mar amenaza ecosistemas costeros críticos.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hover-card">
+                        <button class="accordion-header">Impacto Terrestre</button>
+                        <div class="accordion-content">
+                            <p>La degradación del suelo reduce la capacidad de absorber carbono. El deshielo del permafrost libera metano antiguo, acelerando el calentamiento global.</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="animal-grid">
+                    <div class="card-item animal-card hover-card">
+                        <img src="pinguino.jpg" class="img-small" alt="Pinguino">
+                        <h4>Pingüino de Adelia</h4>
+                        <p>La pérdida de hielo reduce el krill. Sin plataformas sólidas, los polluelos no sobreviven al frío extremo antes de ser impermeables.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="abeja.jpg" class="img-small" alt="Abeja">
+                        <h4>Abejas Polinizadoras</h4>
+                        <p>El calor altera su orientación. Si desaparecen, la producción de alimentos caería un 70%, causando una crisis de hambre mundial.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="elefante.jpg" class="img-small" alt="Elefante">
+                        <h4>Elefante Africano</h4>
+                        <p>Las sequías los obligan a caminar cientos de km extra. La falta de agua reduce su fertilidad y los expone más a la caza furtiva.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="tortuga.jpg" class="img-small" alt="Tortuga">
+                        <h4>Tortuga Marina</h4>
+                        <p>El nivel del mar inunda sus playas. El calor excesivo del nido hace que nazcan casi solo hembras, rompiendo el equilibrio reproductivo.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="leopardo.jpg" class="img-small" alt="Leopardo">
+                        <h4>Leopardo Nieve</h4>
+                        <p>El calentamiento reduce su territorio. Al subir el límite del bosque, su presa natural desaparece y el felino queda acorralado.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="koala.jpg" class="img-small" alt="Koala">
+                        <h4>Koala Australiano</h4>
+                        <p>Incendios intensos destruyen sus refugios. El aumento de CO2 quita nutrientes al eucalipto, volviéndolo pobre en proteínas.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="oso.jpg" class="img-small" alt="Oso">
+                        <h4>Oso Polar</h4>
+                        <p>El deshielo temprano les quita meses de caza. Deben buscar comida en zonas humanas, arriesgando su vida y salud.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="coral.jpg" class="img-small" alt="Coral">
+                        <h4>Arrecifes de Coral</h4>
+                        <p>El estrés térmico causa blanqueamiento. Un aumento de 2°C eliminaría el 99% de los arrecifes, hogar del 25% de la vida marina.</p>
+                    </div>
+                    <div class="card-item animal-card hover-card">
+                        <img src="rana.jpg" class="img-small" alt="Rana">
+                        <h4>Rana Arborícola</h4>
+                        <p>Sensibles a cambios de humedad. La evaporación de microclimas facilita que hongos mortales las infecten masivamente.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="paises-section" class="content-section" style="display:none;">
+            <div class="full-layout">
+                <div class="info-card-full hover-card">
+                    <h3>Acción Climática Global</h3>
+                    <div class="paises-grid">
+                        <div class="card-item hover-card">
+                            <img src="contaminantes.jpg" class="img-medium" alt="Emisores">
+                            <h4>Mayores Emisores</h4>
+                            <p>China, EE.UU. e India lideran las emisiones. El Acuerdo de París busca la neutralidad de carbono para 2050.</p>
+                        </div>
+                        <div class="card-item hover-card">
+                            <img src="ecologicos.jpg" class="img-medium" alt="Referentes">
+                            <h4>Naciones Referentes</h4>
+                            <p>Costa Rica e Islandia demuestran que es posible crecer protegiendo la naturaleza con energías renovables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card-full hover-card">
+                    <h3>Documentos y Ética</h3>
+                    <p><strong>IPCC:</strong> Autoridad científica que dicta las bases de la urgencia climática.</p>
+                    <p><strong>Laudato Si':</strong> Encíclica que propone la "Ecología Integral", uniendo ambiente y justicia social.</p>
+                    <p><strong>WWF:</strong> Organización que lucha contra la deforestación y caza ilegal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="video-section" class="content-section" style="display:none;">
+            <div class="full-layout">
+                <div class="video-container hover-card">
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/25w7nJOYQXI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="paises-grid">
+                    <div class="card-item hover-card">
+                        <img src="inundaciones.jpg" class="img-medium" alt="Inundaciones">
+                        <h4>Inundaciones Flash</h4>
+                        <p>Tormentas extremas saturan drenajes en minutos, causando desplazamientos y pérdidas billonarias.</p>
+                    </div>
+                    <div class="card-item hover-card">
+                        <img src="incendios.jpg" class="img-medium" alt="Incendios">
+                        <h4>Mega-incendios</h4>
+                        <p>Olas de calor secan la vegetación, creando incendios que destruyen biomas completos.</p>
+                    </div>
+                </div>
+
+                <div class="mitigacion-container" style="margin-top: 40px;">
+                    <h2 style="text-align: center; color: var(--verde-fuerte);">Estrategias de Mitigación</h2>
+                    <div class="accordion-grid">
+                        <div class="accordion-item hover-card">
+                            <button class="accordion-header">1. Eficiencia Energética</button>
+                            <div class="accordion-content">
+                                <p>Transición a paneles solares y transporte eléctrico para frenar la acumulación de CO2.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item hover-card">
+                            <button class="accordion-header">2. Consumo Responsable</button>
+                            <div class="accordion-content">
+                                <p>Reducir plásticos y optar por productos locales disminuye la presión sobre recursos naturales.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item hover-card">
+                            <button class="accordion-header">3. Reforestación Activa</button>
+                            <div class="accordion-content">
+                                <p>Proteger bosques primarios ayuda a regenerar sumideros de carbono y restaurar la humedad.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item hover-card">
+                            <button class="accordion-header">4. Educación Ambiental</button>
+                            <div class="accordion-content">
+                                <p>Informar a las comunidades para presionar por políticas ambientales más estrictas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Kodland - Proyecto final - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
